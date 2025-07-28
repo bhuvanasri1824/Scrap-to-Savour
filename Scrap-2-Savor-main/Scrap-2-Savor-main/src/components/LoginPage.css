@@ -1,0 +1,152 @@
+/* LoginPage.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #5a3e6b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section {
+  width: 50%;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.role-selection {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.role-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.role-card:hover {
+  background-color: #5a3e6b;
+  color: white;
+}
+
+.role-card:focus {
+  outline: 2px solid #7c5494;
+  outline-offset: 2px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: all 0.3s ease 0.1s;
+}
+
+.form-group label {
+  flex: 1;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-group input {
+  flex: 2;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease 0.1s;
+}
+
+.form-group input:focus {
+  border-color: #5a3e6b;
+  box-shadow: 0 0 5px rgba(90, 62, 107, 0.5);
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #5a3e6b;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease 0.1s;
+}
+
+.btn:hover {
+  background-color: #7c5494;
+}
+
+.btn:focus {
+  outline: 2px solid #7c5494;
+  outline-offset: 2px;
+}
+
+.forgot-password,
+.back-to-login {
+  color: #5a3e6b;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.forgot-password:hover,
+.back-to-login:hover {
+  color: #7c5494;
+}
+
+.forgot-password:focus,
+.back-to-login:focus {
+  outline: 2px solid #7c5494;
+  outline-offset: 2px;
+}
+
+/* Optional container class for general layout reuse */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group label,
+  .form-group input {
+    width: 100%;
+  }
+
+  .role-selection {
+    flex-direction: column;
+  }
+}
